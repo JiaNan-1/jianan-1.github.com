@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>宏村</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMxe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				color: #5c5c5c;
+			}
+			a{
+			    text-decoration: none;
+			    color: #404040;
+			}
+			a:hover{
+			    color: #F64747;
+			}
+			body{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			li{
+				list-style: none;
+			}
+			img:hover{
+			    transform: scale(1.1);
+			    transition: all 1.5s linear;
+			    box-shadow: 5px 5px 0px 0px #bbb9b9;
+			}
+			.hander{
+				font-size: 60px;
+				letter-spacing: 100px;
+				position: relative;
+				left: 100px;
+				top: 20px;
+				postion:fixed;
+			}
+			#logo{
+				width: 500px;
+				font-weight: 600;
+				font-family: "华文行楷";
+				color: #8c888b;
+				background: -webkit-linear-gradient(45deg, #0c04f3, #f3df05, #f72004, #23f603, #3a6bb0);
+				color: transparent;
+				-webkit-background-clip: text;
+				animation: ran 10s linear infinite;
+				}
+					
+				@keyframes ran {
+				    from {
+				        backgroud-position: 0 0;
+				    }
+				    to {
+				        background-position: 2000px 0;
+				    }	
+				}
+				
+			.search{
+			  position: absolute;
+			  left: 646px;
+			  top:20px;
+			  width: 538px;
+			  height: 36px;
+			}
+			.search input{
+			  float: left;
+			 width: 300px;
+			  height: 33px;
+			  padding-left: 10px;
+			}
+			.search button{
+			  float: left;
+			  width: 80px;
+			  height: 33px;
+			  background-color: #3d3b32;
+			  font-size: 16px;
+			  color: #fff;
+			}
+			.dz{
+				position: absolute;
+				left: 500px;
+				top:10px;
+				height: 20px;
+			}
+			.dz ul li{
+				width: 350px;
+				margin-left: 150px;
+				margin-top: -20px;
+				font-size: 15px;
+				color: #ac0000;
+			}
+			#clock{
+				width:200px;
+				margin-left: 280px;
+				height:20px;
+				margin-top: 45px;
+				font-size: 15px;
+				font-weight:bold;
+				text-align:center;
+				color:#333;				
+			}
+			
+			.nav{
+				height: 50px;
+				margin-top: 20px;
+				background: linear-gradient(#4b4eff,#292993);
+			}
+			.navlist li{
+				float: left;
+				height: 50px;
+				width: 130px;
+				font-size: 20px;
+				line-height: 50px;
+				text-align: center;
+			}	
+			.navlist a{
+				color: #e7e7e7;
+				display: write;
+			}
+			.navlist{
+				width: 800px;
+				margin: auto;
+			}
+			.navlist a:hover{
+				background-color: #3535bf;
+				color: #F64747;
+			}
+			
+			.sy{
+				width: 750px;
+				height: 500px;
+				display: flex;
+				margin: auto;
+			}
+			.sy h3{
+				display: flex;
+				align-items: center;
+				color: #ce8460;
+				font-size: 24px;
+				margin-top: -400px;
+			}
+			.sy h3::before{
+				content: '';
+				display: inline-block;
+				width: 5px;
+				height: 25px;
+				margin-right: 10px;
+				background: #ce8460;
+			}
+			.sy ul li{
+				height: 40px;
+				line-height: 40px;
+				font-size: 20px;
+				border-bottom: 1px dotted #ddd;
+			}
+			.sy img{
+				width: 200px;
+				height: 100px;
+			}
+			#left1,#right1{
+				width: 210px;
+				height: 100px;
+				margin: 10px;
+				margin-top: 65px;
+				}
+			#center1{
+				flex: 1;
+				height: 100px;
+				margin: 10px;
+				margin-top: 65px;
+			}
+			
+			.ms{
+				width: 750px;
+				height: 500px;
+				display: flex;
+				margin: auto;
+			}
+			.ms h3{
+				display: flex;
+				align-items: center;
+				color: #ce8460;
+				font-size: 24px;
+				margin-top: -400px;
+			}
+			.ms h3::before{
+				content: '';
+				display: inline-block;
+				width: 5px;
+				height: 25px;
+				margin-right: 10px;
+				background: #ce8460;
+			}
+			.ms ul li{
+				height: 40px;
+				line-height: 40px;
+				font-size: 20px;
+				border-bottom: 1px dotted #ddd;
+			}
+			.ms img{
+				width: 200px;
+				height: 100px;
+			}
+			#left,#right{
+				width: 210px;
+				height: 100px;
+				margin: 10px;
+				margin-top: 65px;
+				}
+			#center{
+				flex: 1;
+				height: 100px;
+				margin: 10px;
+				margin-top: 65px;
+			}
+			
+			.jq{
+				width: 750px;
+				height: 500px;
+				display: flex;
+				margin: auto;
+			}
+			.jq h3{
+				display: flex;
+				align-items: center;
+				color: #ce8460;
+				font-size: 24px;
+				margin-top: -400px;
+			}
+			.jq h3::before{
+				content: '';
+				display: inline-block;
+				width: 5px;
+				height: 25px;
+				margin-right: 10px;
+				background: #ce8460;
+			}
+			.jq ul li{
+				height: 40px;
+				line-height: 40px;
+				font-size: 20px;
+				border-bottom: 1px dotted #ddd;
+			}
+			.jq img{
+				width: 200px;
+				height: 100px;
+			}
+			#left2,#right2{
+				width: 210px;
+				height: 100px;
+				margin: 10px;
+				margin-top: 65px;
+				}
+			#center2{
+				flex: 1;
+				height: 100px;
+				margin: 10px;
+				margin-top: 65px;
+			}
+			
+			.footer{
+						text-align: center;
+						background-color: #6f6f6f;
+						color: #fff;
+						padding: 10px 0;
+					}
+			</style>
+			</head>
+			<body>
+				<div class="hander" id="logo">宏村</div>
+				<div class="nav">
+					<ul class="navlist">
+						<li>
+							<a href="index.html">网站首页</a>
+						</li>
+						<li>
+							<a href="index6.html">特色景点</a>
+							
+						</li>
+						<li>
+							<a href="index2.html">旅游攻略</a>
+						</li>
+						<li>
+							<a href="index3.html">历史文化</a>
+						</li>
+						<li>
+							<a href="index4.html">在线预订</a>
+						</li>
+						<li>
+							<a href="index5.html">登录/注册</a>
+						</li>
+					</ul>
+					  <div class="search">
+						  <form action="https://www.baidu.com/s" method="get">
+					        <input type="search" >
+					        <button type="button">搜索</button>
+							</form>
+					      </div>
+					<div class="dz">
+						<div id="clock"></div>
+						<ul>
+							<li><a href="index9.html">个人主页</a></li>
+						</ul>
+					</div>
+					<div class="sy">
+						<h3>美食</h3>
+						<div id="left1">
+							<li><a href="index7.html"><img src="img/m1.png" title="刀板香" alt="刀板香">刀板香</a></li>
+							<li><a href="index7.html"><img src="img/m2.png" title="干椒蒸腊肉" alt="干椒蒸腊肉">干椒蒸腊肉</a></li>
+						</div>
+						<div id="center1">
+							<li><a href="index7.html"><img src="img/m3.png" title="毛豆腐" alt="毛豆腐">毛豆腐</a></li>
+							<li><a href="index7.html"><img src="img/m4.png" title="臭鲑鱼" alt="臭鲑鱼"><br />臭鲑鱼</a></li>
+						</div>	
+						<div id="right1">				
+							<li><a href="index7.html"><img src="img/m5.png" title="腊八豆腐" alt="腊八豆腐">腊八豆腐</a></li>
+							<li><a href="index7.html"><img src="img/m6.png" title="干食桃" alt="食桃">食桃</a></li>
+						</div>
+					</div>
+						<div class="ms">
+						<h3>民宿</h3>
+						<div id="left">
+							<li><a href="index8.html"><img src="img/z1.png" title="御园客栈" alt="御园客栈">御园客栈</a></li>
+							<li><a href="index8.html"><img src="img/z2.png" title="心自在客栈" alt="心自在客栈">心自在客栈</a></li>
+						</div>
+						<div id="center">
+							<li><a href="index8.html"><img src="img/z3.png" title="三昧清宿" alt="三昧清宿">三昧清宿</a></li>
+							<li><a href="index8.html"><img src="img/z4.png" title="梦晨小筑" alt="梦晨小筑"><br />梦晨小筑</a></li>
+						</div>	
+						<div id="right">				
+							<li><a href="index8.html"><img src="img/z5.png" title="青山绿水庄园" alt="青山绿水庄园">青山绿水庄园</a></li>
+							<li><a href="index8.html"><img src="img/z6.png" title="塔川秋韵客栈" alt="塔川秋韵客栈">塔川秋韵客栈</a></li>
+						</div>
+					</div>
+					<div class="jq">
+						<h3>景区</h3>
+						<div id="left2">
+							<li><a href="index1.html"><img src="img/南湖.png" title="南湖" alt="南湖">南湖</a></li>
+							<li><a href="index1.html"><img src="img/116.png" title="乐叙堂" alt="乐叙堂">乐叙堂</a></li>
+						</div>
+						<div id="center2">
+							<li><a href="index1.html"><img src="img/112.png" title="画桥" alt="画桥">画桥</a></li>
+							<li><a href="index1.html"><img src="img/月沼.png" title="月沼" alt="月沼"><br />月沼</a></li>
+						</div>	
+						<div id="right2">				
+							<li><a href="index1.html"><img src="img/118.png" title="敬修堂" alt="敬修堂">敬修堂</a></li>
+							<li><a href="index1.html"><img src="img/120.png" title="桃源居" alt="桃源居">桃源居</a></li>
+						</div>
+					</div>
+				<div class="footer">&copy; 版权所有 李佳楠20220000608</div>
+	</body>
+</html>
+<script>
+		function getTime(){     //定义函数
+		var now=new Date();    //创建日期对象
+		document.getElementById('clock').innerHTML=now.toLocaleString(); //将日期和时间显示到盒子中
+		}
+		window.onload=setInterval(getTime,1000); //每隔1s执行一次getTime()函数
+		
+		var input = document.querySelector('input[type="search"]');
+		input.addEventListener('input', function() {
+		    var value = this.value;
+		    if (value.length > 0) {
+		        // 发送Ajax请求到百度搜索建议API
+		        fetch('https://www.baidu.com/sugse/' + encodeURIComponent(value))
+		            .then(response => response.json())
+		            .then(data => {
+		                // 更新搜索建议列表
+		                console.log(data);
+		            })
+		            .catch(error => {
+		                console.error('Error:', error);
+		            });
+		    }
+		});
+	</script>
+				

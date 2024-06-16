@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>宏村</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMxe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				color: #5c5c5c;
+			}
+			a{
+			    text-decoration: none;
+			    color: #404040;
+			}
+			a:hover{
+			    color: #F64747;
+			}
+			body{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			li{
+				list-style: none;
+			}
+			img:hover{
+			    transform: scale(1.1);
+			    transition: all 1.5s linear;
+			    box-shadow: 5px 5px 0px 0px #bbb9b9;
+			}
+			.hander{
+				font-size: 60px;
+				letter-spacing: 100px;
+				position: relative;
+				left: 100px;
+				top: 20px;
+				postion:fixed;
+			}
+			#logo{
+				width: 500px;
+				font-weight: 600;
+				font-family: "华文行楷";
+				color: #8c888b;
+				background: -webkit-linear-gradient(45deg, #0c04f3, #f3df05, #f72004, #23f603, #3a6bb0);
+				color: transparent;
+				-webkit-background-clip: text;
+				animation: ran 10s linear infinite;
+				}
+					
+				@keyframes ran {
+				    from {
+				        backgroud-position: 0 0;
+				    }
+				    to {
+				        background-position: 2000px 0;
+				    }	
+				}
+				
+			.search{
+			  position: absolute;
+			  left: 646px;
+			  top:20px;
+			  width: 538px;
+			  height: 36px;
+			}
+			.search input{
+			  float: left;
+			 width: 300px;
+			  height: 33px;
+			  padding-left: 10px;
+			}
+			.search button{
+			  float: left;
+			  width: 80px;
+			  height: 33px;
+			  background-color: #3d3b32;
+			  font-size: 16px;
+			  color: #fff;
+			}
+			.search button:hover{
+				color: #F64747;
+			}
+			
+			.dz{
+				position: absolute;
+				left: 500px;
+				top:10px;
+				height: 20px;
+			}
+			.dz ul li{
+				width: 350px;
+				margin-left: 150px;
+				margin-top: -20px;
+				font-size: 15px;
+				color: #ac0000;
+			}
+			#clock{
+				width:200px;
+				margin-left: 280px;
+				height:20px;
+				margin-top: 45px;
+				font-size: 15px;
+				font-weight:bold;
+				text-align:center;
+				color:#333;				
+			}
+			
+			.nav{
+				height: 50px;
+				margin-top: 20px;
+				background: linear-gradient(#4b4eff,#292993);
+			}
+			.navlist li{
+				float: left;
+				height: 50px;
+				width: 130px;
+				font-size: 20px;
+				line-height: 50px;
+				text-align: center;
+			}	
+			.navlist a{
+				color: #e7e7e7;
+				display: write;
+			}
+			.navlist{
+				width: 800px;
+				margin: auto;
+			}
+			.navlist a:hover{
+				background-color: #3535bf;
+				color: #F64747;
+			}
+			
+			.banner{
+				margin: 0 auto;
+				position: relative;
+				width: 1200px;
+				height: 500px;
+				overflow: hidden;
+			}
+			#slider{
+				margin: 0 auto;
+				position: relative;  /* 定位 */
+				width: 1200px;
+				height: 500px;
+				overflow: hidden;
+			}
+			#list{
+				position: absolute; /* 定位 */
+				left: 0;
+				top: 0;
+				width: 600%;
+				height: 500px;
+			}
+			#list li{
+				float: left;   /* 浮动：左对齐。所有列表项自动为行内元素 */
+			}
+			#list li img{
+				width: 1200px;
+				height: 500px;
+			}
+		}
+			
+			.main{
+				position:relative;
+			    width: 1160px;
+			    margin: 0 auto;
+				top: -20px;
+			    display: flex;
+			    padding: 20px;
+			    justify-content: space-between;
+			}
+			.tj{
+				width: 1000px;
+				height: 500px;
+				display: flex;
+				margin: auto;
+			}
+			.tj h3{
+				display: flex;
+				align-items: center;
+				color: #ce8460;
+				font-size: 24px;
+				margin-top: -400px;
+			}
+			.tj h3::before{
+				content: '';
+				display: inline-block;
+				width: 5px;
+				height: 25px;
+				margin-right: 10px;
+				background: #ce8460;
+			}
+			.tj ul li{
+				height: 300px;
+				line-height: 40px;
+				font-size: 20px;
+				border-bottom: 1px dotted #ddd;
+			}
+			.photos {
+				width: 880px;
+				height: 520px;
+				margin: 100px auto;
+			}
+			.photos li {
+				float: left;
+				width: 240px;
+				height: 240px;
+				margin-left: 40px;
+				margin-bottom: 40px;
+			}
+			.photos li a {
+				display: inline-block;
+				width: 240px;
+				height: 240px;
+				color: #333;
+				text-align: center;
+				text-decoration: none;
+			}
+			.photos a:after {
+				content: attr(title);
+			}
+			.photos li:nth-child(even) a {
+				transform: rotate(10deg);
+			}
+			.photos img {
+				width: 240px;
+				height: 240px;
+				transition: all 0.5s ease;
+			}
+			.photos li:hover .img1 {
+				border-radius: 50%;
+			}
+			.photos li:hover .img2 {
+				border: 3px solid #ff0;
+				transform: rotate(-60deg);
+			}
+			.photos li:hover .img3 {
+				transform: rotate(360deg);
+			}
+			.container {
+			  display: flex;
+			  align-items: center;
+			 margin-top: -100px; 
+			}
+			.video-container {
+			  width: 70%;
+			
+			}
+			.text-container {
+			  width: 30%;
+			  padding: 40px;
+			  font-family: "黑体";
+			}
+			
+			.main1{
+				position: relative;		              
+				width:200px;
+				height:300px;
+				margin:20px auto;				
+				perspective: 230px;                
+			}
+			.ys{
+				width: 1000px;
+				height: 500px;
+				display: flex;
+				margin: auto;
+			}
+			.ys h3{
+				display: flex;
+				align-items: center;
+				color: #ce8460;
+				font-size: 24px;
+				margin-top: -400px;
+			}
+			.ys h3::before{
+				content: '';
+				display: inline-block;
+				width: 5px;
+				height: 25px;
+				margin-right: 10px;
+				background: #ce8460;
+			}
+			.ys ul li{
+				height: 300px;
+				line-height: 40px;
+				font-size: 20px;
+				border-bottom: 1px dotted #ddd;
+			}
+			.box{
+				position: relative;		
+				float: left;
+				width:200px;
+				height:392px;
+				margin:20px auto;	
+				top: 60px;
+				perspective: 230px;                  
+			}
+			.box img,.box .text{                  
+				position: absolute;                  
+				top:0;
+				left:0;
+				width:200px;
+				height: 392px;
+			}
+			.box .text{                              
+				background-color: rgba(0,0,0,0.5);  
+				color:white;
+			}
+			.box .text h1{
+				width:150px;
+				margin:80px auto 0;
+				font-size:24px;
+				text-align: center;
+			}
+			.box .text p{
+				width:140px;
+				margin:10px auto 0;
+				font-size:18px;
+				text-align: justify;
+			}
+			.zheng,.fan{
+				backface-visibility: hidden;      
+				transition: all 0.5s ease-in 0s;  
+			}
+			.fan{
+				transform: rotateY(-180deg);    
+			}
+			.box:hover .zheng{
+				transform: rotateY(180deg);      
+			}
+			.box:hover .fan{
+				transform: rotateY(0deg);         
+			}
+			.box1{
+				position: relative;	
+				width:200px;
+				top: 60px;
+				float: center;
+				height:300px;
+				margin:20px auto;				
+				perspective: 230px;                  
+			}
+			.box1 img,.box1 .text{                     
+				position: absolute;                  
+				top:0;
+				left:0;
+				width:200px;
+				height: 392px;
+			}
+			.box1 .text{                              	
+				background-color: rgba(0,0,0,0.5);   
+				color:white;
+			}
+			.box1 .text h1{
+				width:150px;
+				margin:80px auto 0;
+				font-size:24px;
+				text-align: center;
+			}
+			.box1 .text p{
+				width:140px;
+				margin:10px auto 0;
+				font-size:18px;
+				text-align: justify;
+			}
+			.wu,.fan{
+				backface-visibility: hidden;     
+				transition: all 0.5s ease-in 0s; 
+			}
+			.fan{
+				transform: rotateY(-180deg);      
+			}
+			.box1:hover .wu{
+				transform: rotateY(180deg);       
+			}
+			.box1:hover .fan{
+				transform: rotateY(0deg);        
+			}
+			.box2{
+				position: relative;	
+				width:200px;
+				top: 60px;
+				float: right;
+				height:392px;
+				margin:20px auto;				
+				perspective: 230px;                  
+			}
+			.box2 img,.box2 .text{                     
+				position: absolute;                  
+				top:0;
+				left:0;
+				width:200px;
+				height: 392px;
+			}
+			.box2 .text{                              	
+				background-color: rgba(0,0,0,0.5);   
+				color:white;
+			}
+			.box2 .text h1{
+				width:150px;
+				margin:80px auto 0;
+				font-size:24px;
+				text-align: center;
+			}
+			.box2 .text p{
+				width:140px;
+				margin:10px auto 0;
+				font-size:18px;
+				text-align: justify;
+			}
+			.su,.fan{
+				backface-visibility: hidden;     
+				transition: all 0.5s ease-in 0s; 
+			}
+			.fan{
+				transform: rotateY(-180deg);      
+			}
+			.box2:hover .su{
+				transform: rotateY(180deg);       
+			}
+			.box2:hover .fan{
+				transform: rotateY(0deg);        
+			}
+			.xx{
+				width: 1000px;
+				height: 400px;
+				display: flex;
+				margin: auto;
+				text-align: left;
+			}
+			.xx h3{
+				display: flex;
+				align-items: center;
+				color: #ce8460;
+				font-size: 24px;
+				margin-top: -400px;
+			}
+			.xx h3::before{
+				content: '';
+				display: inline-block;
+				width: 5px;
+				height: 25px;
+				margin-right: 10px;
+				background: #ce8460;
+			}
+			.xx ul{
+				height: 150px;
+				line-height: 50px;
+				margin-top: 40px;
+				font-size: 15px;
+			}
+			.gp{
+				width: 1000px;
+				height: 100px;
+				display: flex;
+				margin: auto;
+				text-align: center;
+			}
+			.gp h3{
+				display: flex;
+				align-items: center;
+				color: #ce8460;
+				font-size: 24px;
+				margin-top: -400px;
+			}
+			.gp h3::before{
+				content: '';
+				display: inline-block;
+				width: 5px;
+				height: 25px;
+				margin-right: 10px;
+				background: #ce8460;
+			}
+			.gp ul{
+				height: 150px;
+				line-height: 50px;
+				margin-top: -120px;
+				font-size: 15px;
+			}
+			
+			.footer{
+				text-align: center;
+				background-color: #6f6f6f;
+				color: #fff;
+				padding: 10px 0;
+			}
+	</style>
+	</head>
+	<body>
+		<div class="hander" id="logo">宏村</div>
+		<div class="nav">
+			<ul class="navlist">
+				<li>
+					<a href="index.html">网站首页</a>
+				</li>
+				<li>
+					<a href="index6.html">特色景点</a>
+					
+				</li>
+				<li>
+					<a href="index2.html">旅游攻略</a>
+				</li>
+				<li>
+					<a href="index3.html">历史文化</a>
+				</li>
+				<li>
+					<a href="index4.html">在线预订</a>
+				</li>
+				<li>
+					<a href="index5.html">登录/注册</a>
+				</li>
+			</ul>
+			<div class="search">
+				<form action="https://www.baidu.com/s" method="get">
+			      <input type="search" name="wd">
+			      <button type="button">搜索</button>
+				  </form>
+			    </div>
+				
+			<div class="dz">
+				<div id="clock"></div>
+				<ul>
+					<li><a href="index9.html">个人主页</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="banner">
+				<ul id="list">
+				<li><img src="img/1.png" alt=""></li>
+				<li><img src="img/2.png" alt=""></li>
+				<li><img src="img/3.png" alt=""></li>
+				<li><img src="img/4.png" alt=""></li>
+				<li><img src="img/5.png" alt=""></li>
+				<li><img src="img/1.png" alt=""></li>
+				</ul>
+			</div>
+		<div class="main">
+			<div class="tj">
+				<h3>景点推荐</h3>
+				<ul class="photos">
+					<li><a href="img/南湖.png" title="南湖"><img src="img/南湖.png" alt="南湖" class="img1"></a></li>
+					<li><a href="img/古树.png" title="古树"><img src="img/古树.png" alt="古树" class="img2"></a> </li>
+					<li><a href="img/桃源居.png" title="桃园居"><img src="img/桃源居.png" alt="桃园居" class="img3"></a> </li>
+					</ul>
+					</div>
+					</div>
+					<div class="container">
+					  <div class="video">
+					    <video src="img/宏村.mp4" controls width="800" height="400" poster="poster.jpg" autoplay loop muted>
+					    </video>
+					  </div>
+					  <div class="text-container">
+					    <p>黄山脚下徽州古镇，特色徽派马头墙风光</br>
+					宏村意义深重的建筑格局，西递严格的宗族秩序，游鱼流水每户接通</br>
+					古树古楼，亘古悠长，画家写生的天堂，影视传奇的故乡。</p>
+					  </div>	
+				</div>
+		<div class="main2">
+			<div class="ys">
+			<h3>影视作品</h3>
+			<div class="box">
+						<img src="img/卧虎藏龙.png" alt="卧虎藏龙" class="zheng">   
+						<div class="text fan">               
+							<h1>卧虎藏龙</h1>
+							<p>电影《卧虎藏龙》曾取景：村外的南湖桥，正是影片开端李慕白牵马走过的桥；村中的月沼，是影片中后期玉娇龙点水而过的地方。</p>
+						</div>
+					</div>	
+			<div class="box1">
+						<img src="img/武林外传.png" alt="武林外传" class="wu">
+						<div class="text fan">
+							<h1>武林外传</h1>
+							<p>该剧讲述了关中一个普通的小镇—七俠镇，这里有一家同福客栈。就是这间不起眼的江湖客栈，因缘巧合之下汇聚了一群性格各异又活泼搞怪的年轻人。</p>
+						</div>
+					</div>
+			<div class="box2">
+				<img src="img/苏乞儿.png" alt="苏乞儿" class="su">
+				<div class="text fan">
+					<h1>苏乞儿</h1>
+					<p>该片讲述了广州提督之子苏尔哈灿为赢得心爱之人的喜欢，毅然赴京赶考武状元，但在考取武状元时被人设计陷害沦为乞丐，最后与爱人走到一起的故事</p>
+				</div>
+			</div>
+		</div>
+	<div class="xx">
+		<h3>特色线路</h3>
+		<ul>
+		<p >游览路线1：南湖→南湖书院→乐彼堂→水圳→敬德堂→月沼→汪氏宗祠→敬修堂→承志堂→树人堂→桃源居→村口古树。</br>
+		游览线路2：入口→古银杏树→古红杨树→桃园居→德义堂→月沼→敬德堂→游客中心。</br>
+		游览线路3：入口→月沼→德义堂→桃源居→古红杨树→古银杏树→南湖书院→游客中心→出口。</br>
+		</p>
+		</ul>
+		</div>
+	<div class="gp">
+		<h3>门票信息</h3>
+		<ul>
+		<p>104元/人 三天有效,学生证半价（研究生证除外）。</p>
+		</ul>
+		</div>		
+	</div>					
+		<div class="footer">&copy; 版权所有 李佳楠20220000608</div>
+			</body>
+		</html>
+	<script>
+		var slider = document.querySelector(".banner");
+		var list =  document.querySelector("#list");
+		var img =  document.querySelector("img");
+		var uli = list.children;
+		var index = 0;
+		setInterval(move,2000);
+		function move(){
+			if(index < uli.length-1){
+				index++;
+				list.style.left = -index * img.offsetWidth+"px";
+				list.style.transition = 'left 1s';
+				}else{
+					index=0;
+					list.style.left = -index * img.offsetWidth+"px";
+					list.style.transition = 'left 0s';
+				}
+		};
+			
+		function getTime(){    
+					 var now=new Date();  
+					 document.getElementById('clock').innerHTML=now.toLocaleString(); 
+					}
+					window.onload=setInterval(getTime,1000); 	
+		
+		var input = document.querySelector('input[type="search"]');
+		input.addEventListener('input', function() {
+		    var value = this.value;
+		    if (value.length > 0) {
+		        fetch('https://www.baidu.com/sugse/' + encodeURIComponent(value))
+		            .then(response => response.json())
+		            .then(data => {
+		                console.log(data);
+		            })
+		            .catch(error => {
+		                console.error('Error:', error);
+		            });
+		    }
+		});
+	</script>

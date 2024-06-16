@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>宏村</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMxe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				color: #5c5c5c;
+			}
+			a{
+			    text-decoration: none;
+			    color: #404040;
+			}
+			a:hover{
+			    color: #F64747;
+			}
+			body{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			li{
+				list-style: none;
+			}
+			img:hover{
+			    transform: scale(1.1);
+			    transition: all 1.5s linear;
+			    box-shadow: 5px 5px 0px 0px #bbb9b9;
+			}
+			p{
+				margin-top: 15px;
+				text-indent: 2em;
+			}
+			.hander{
+				font-size: 60px;
+				letter-spacing: 100px;
+				position: relative;
+				left: 100px;
+				top: 20px;
+				postion:fixed;
+			}
+			#logo{
+				width: 500px;
+				font-weight: 600;
+				font-family: "华文行楷";
+				color: #8c888b;
+				background: -webkit-linear-gradient(45deg, #0c04f3, #f3df05, #f72004, #23f603, #3a6bb0);
+				color: transparent;
+				-webkit-background-clip: text;
+				animation: ran 10s linear infinite;
+				}
+					
+				@keyframes ran {
+				    from {
+				        backgroud-position: 0 0;
+				    }
+				    to {
+				        background-position: 2000px 0;
+				    }	
+				}
+				
+			.search{
+			  position: absolute;
+			  left: 646px;
+			  top:20px;
+			  width: 538px;
+			  height: 36px;
+			}
+			.search input{
+			  float: left;
+			 width: 300px;
+			  height: 33px;
+			  padding-left: 10px;
+			}
+			.search button{
+			  float: left;
+			  width: 80px;
+			  height: 33px;
+			  background-color: #3d3b32;
+			  font-size: 16px;
+			  color: #fff;
+			}
+			.dz{
+				position: absolute;
+				left: 500px;
+				top:10px;
+				height: 20px;
+			}
+			.dz ul li{
+				width: 350px;
+				margin-left: 150px;
+				margin-top: -20px;
+				font-size: 15px;
+				color: #ac0000;
+			}
+			#clock{
+				width:200px;
+				margin-left: 280px;
+				height:20px;
+				margin-top: 45px;
+				font-size: 15px;
+				font-weight:bold;
+				text-align:center;
+				color:#333;				
+			}
+			
+			.nav{
+				height: 50px;
+				margin-top: 20px;
+				background: linear-gradient(#4b4eff,#292993);
+			}
+			.navlist li{
+				float: left;
+				height: 50px;
+				width: 130px;
+				font-size: 20px;
+				line-height: 50px;
+				text-align: center;
+			}	
+			.navlist a{
+				color: #e7e7e7;
+				display: write;
+			}
+			.navlist{
+				width: 800px;
+				margin: auto;
+			}
+			.navlist a:hover{
+				background-color: #3535bf;
+				color: #F64747;
+			}
+			
+			.main h2{
+				margin-top: 20px;
+				text-align: center;
+			}
+			.main img{
+				display: block;
+				margin: 0 auto;
+				width: 800px;
+				margin-top: 20px;
+			}
+			.main ul{
+				font-size: 15px;
+				text-align: center;
+			}
+			
+			.footer{
+				text-align: center;
+				background-color: #6f6f6f;
+				margin-top: 20px;
+				color: #fff;
+				padding: 10px 0;
+			}
+			</style>
+		</head>	
+	<body>
+		<div class="hander" id="logo">宏村</div>
+		<div class="nav">
+			<ul class="navlist">
+				<li>
+					<a href="index.html">网站首页</a>
+				</li>
+				<li>
+					<a href="index6.html">特色景点</a>
+				</li>
+				<li>
+					<a href="index2.html">旅游攻略</a>
+				</li>
+				<li>
+					<a href="index3.html">历史文化</a>
+				</li>
+				<li>
+					<a href="index4.html">在线预订</a>
+				</li>
+				<li>
+					<a href="index5.html">登录/注册</a>
+				</li>
+				</ul>
+				<div class="search">
+					<form action="https://www.baidu.com/s" method="get">
+					<input type="search" >
+					<button type="button">搜索</button>
+					</form>
+				</div>
+				<div class="dz">
+					<div id="clock"></div>
+					<ul>
+						<li><a href="index9.html">个人主页</a></li>
+					</ul>
+					</div>
+				</div>
+		<div class="main">
+			<h2>宏村之旅&nbsp</h2>
+			<p>宏村景区是徽派古村中的代表，有“中国画里乡村”的美誉。来宏村一是看水利系统带来的水景，南湖、月沼是精华所在；二是看建筑上的徽派三雕，砖雕、石雕、木雕，像剪纸一样精细，人文景观与自然景观很好地融为一体。这里景点集中，无需刻意游览，很适合慢悠悠的闲逛，上午可以在景区内游玩，
+去看看著名的南湖，月沼。 午饭后，租一辆自行车，顺着公路骑车去卢村或者塔川看看。三四月建议去卢村，一路上都会有大片的油菜花田相伴，到卢村还可以观赏稀世的木雕楼。如果是秋天就可以骑车去塔川，这里的秋色也一样不会让人失望。若包车游玩还可以前往木坑，看看著名的竹海。 
+晚上依旧返回宏村景区内住宿，夜晚的宏村也同样迷人，依旧慢悠悠~ </p>
+            <p>【行程】 宏村，南湖——月沼——汪氏宗祠——敬修堂——树人堂——桃源居——古银杏树——南湖书院——月沼</p>
+            <ul >
+			<img src="img/111.png" title="宏村" alt="宏村">
+			<p>宏村</p>
+			<img src="img/112.png" title="画桥" alt="画桥">
+			<p>画桥</p>
+			<p>水是眼波横，山是眉峰聚</p>
+			<img src="img/113.png" title="南湖" alt="南湖">
+			<p>南湖</p>
+			<p>试问行人去那边？眉眼盈盈处</p>
+			</ul>
+			<p>在画中流连了好一会儿，终于恋恋不舍地说再见了。离开了南湖，我没有多做停留，径直向村子中心的月沼进发。沿着小巷左右穿行，两边多是卖特产的小店，似乎和其它的古镇没有什么区别。</p>
+			<p>然而穿过最后一道拱门，月沼就像一个眸子一样惊艳了我。</p>
+			<ul>
+			<img src="img/114.png" title="月沼" alt="月沼">
+			<p>天空之镜</p>
+			<img src="img/115.png" title="月云" alt="月云">
+			<p>月沼</p>
+			</ul>
+			<p>月沼本身不大，周围的建筑也就是典型的徽派建筑。可奇怪的是，两者一旦结合起来，居然产生了绝妙的化学反应——建筑因水面变得灵动，水面因建筑也变得丰富了。月沼旁边的汪氏宗祠，是整个村子最核心的建筑。</p>
+			<p>它就像是一本厚重的书，讲述着宏村过去的故事。</p>
+			<ul>
+			<img src="img/116.png" title="乐叙堂" alt="乐叙堂">
+			<p>汪氏宗祠</p>
+			<p>祠堂里的五檐门楼</p>
+			<img src="img/117.png" title="玉簪花" alt="玉簪花">
+			<p>庭院里的玉簪花</p>
+			</ul>
+			<p>离开月沼，依次参观敬修堂、树人堂、桃源居等等保存完好的古民居。虽是走马观花，对徽州建筑也仅仅是略知皮毛，但那精美的门楼、细致的砖石木雕、高啄的马头飞檐、寓意深远的陈设，还是让每个人都赞叹不已。</p>
+			<p>徽州的故事，便在这些沉默无言的古民居里面了。</p>
+			<ul>
+			<img src="img/118.png" title="敬修堂" alt="敬修堂">
+			<p>敬修堂</p>
+			<p>各种吉祥寓意的石雕</p>
+			<img src="img/119.png" title="树人堂" alt="树人堂">
+			<p>树人堂</p>
+			<p>十年树木，百年树人</p>
+			<img src="img/120.png" title="桃源居" alt="桃源居">
+			<p>桃源居</p>
+			<p>结庐在人境，而无车马喧</p>
+			<img src="img/121.png" title="东瓶西镜" alt="东瓶西镜">
+			<p>东瓶西镜放，恨不能遗忘</p>
+			</ul>
+			<p>四处闲逛，最后又回到了南湖边上。在大树下看写生的学生，到村口摸一摸几百年的古树，到南湖书院感受一下书香，随便找一家店尝试一下臭鲑鱼和毛豆腐，感受一下徽州的另一种味道。</p>
+			<p>最后还是念念不忘月沼，与黄昏时的她再来一次最美的邂逅。</p>
+			<ul>
+			<img src="img/122.png" title="南湖书院" alt="南湖书院">
+			<p>南湖书院</p>
+			<p>青春的模样</p>
+			<img src="img/123.png" title="银杏" alt="银杏">
+			<p>岁月的故事</p>
+			<img src="img/124.png" title="🐟" alt="🐟">
+			<p>徽州的味道</p>
+			<img src="img/125.png" title="月影" alt="月影">
+			<p>黄昏的光影</p>
+			<img src="img/126.png" title="月夜" alt="月夜">
+			<p>温柔的夜色</p>
+			</ul>
+			<p>天色渐晚，一串串红灯笼陆续亮了起来。远离了城市的喧嚣，宏村的夜格外温柔。</p>
+			<p>一夜安眠过后，该启程去下一个目的地了。即使是再这分别的时刻，宏村还是给了我们最后的惊艳。</p>
+			<ul>
+			<img src="img/127.png" title="月晓" alt="月晓">
+			<p>月破云来花弄影</p>
+			</ul>
+			<p>【住宿】宏村内坐落着多处提供住宿的古民居，餐厅很多，各方面条件都不错，推荐景区内住宿。</p>
+			<p>【交通】宏村景区内靠双脚就能游览全部景点，而周边相邻景点也不远，三四月的油菜花季可以选择徒步或者在村口租自行车游玩，30元左右一天，也可以包车或者搭乘三轮摩托车前往。 卢村、塔川距宏村景区只有2-3公里的距离，推荐徒步或骑车前往，可以边走边玩，一路都是美景相随。</p>
+		</div>
+		<div class="footer">&copy; 版权所有 李佳楠20220000608</div>
+	</body>
+</html>
+<script>
+		function getTime(){     //定义函数
+		var now=new Date();    //创建日期对象
+		document.getElementById('clock').innerHTML=now.toLocaleString(); //将日期和时间显示到盒子中
+		}
+		window.onload=setInterval(getTime,1000); //每隔1s执行一次getTime()函数
+		
+		var input = document.querySelector('input[type="search"]');
+		input.addEventListener('input', function() {
+		    var value = this.value;
+		    if (value.length > 0) {
+		        // 发送Ajax请求到百度搜索建议API
+		        fetch('https://www.baidu.com/sugse/' + encodeURIComponent(value))
+		            .then(response => response.json())
+		            .then(data => {
+		                // 更新搜索建议列表
+		                console.log(data);
+		            })
+		            .catch(error => {
+		                console.error('Error:', error);
+		            });
+		    }
+		});
+	</script>

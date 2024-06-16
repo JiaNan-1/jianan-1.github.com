@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>个人主页</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMxe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				color: #5c5c5c;
+			}
+			a{
+			    text-decoration: none;
+			    color: #404040;
+			}
+			a:hover{
+			    color: #F64747;
+			}
+			body{
+				width: 1200px;
+				margin: 0 auto;
+				background-color: #fff6ff;
+			}
+			li{
+				list-style: none;
+			}
+			img:hover{
+			    transform: scale(1.1);
+			    transition: all 1.5s linear;
+			    box-shadow: 5px 5px 0px 0px #bbb9b9;
+			}
+			.hander{
+				font-size: 60px;
+				letter-spacing: 100px;
+				position: relative;
+				left: 100px;
+				top: 20px;
+				postion:fixed;
+			}
+			#logo{
+				width: 500px;
+				font-weight: 600;
+				font-family: "华文行楷";
+				color: #8c888b;
+				background: -webkit-linear-gradient(45deg, #0c04f3, #f3df05, #f72004, #23f603, #3a6bb0);
+				color: transparent;
+				-webkit-background-clip: text;
+				animation: ran 10s linear infinite;
+				}
+					
+				@keyframes ran {
+				    from {
+				        backgroud-position: 0 0;
+				    }
+				    to {
+				        background-position: 2000px 0;
+				    }	
+				}
+				
+			.search{
+			  position: absolute;
+			  left: 646px;
+			  top:20px;
+			  width: 538px;
+			  height: 36px;
+			}
+			.search input{
+			  float: left;
+			 width: 300px;
+			  height: 33px;
+			  padding-left: 10px;
+			}
+			.search button{
+			  float: left;
+			  width: 80px;
+			  height: 33px;
+			  background-color: #3d3b32;
+			  font-size: 16px;
+			  color: #fff;
+			}
+			.search button:hover{
+				color: #F64747;
+			}
+			
+			.dz{
+				position: absolute;
+				left: 500px;
+				top:10px;
+				height: 20px;
+			}
+			.dz ul li{
+				width: 350px;
+				margin-left: 150px;
+				margin-top: -20px;
+				font-size: 15px;
+				color: #ac0000;
+			}
+			#clock{
+				width:200px;
+				margin-left: 280px;
+				height:20px;
+				margin-top: 45px;
+				font-size: 15px;
+				font-weight:bold;
+				text-align:center;
+				color:#333;				
+			}
+			
+			.nav{
+				height: 50px;
+				margin-top: 20px;
+				background: linear-gradient(#4b4eff,#292993);
+			}
+			.navlist li{
+				float: left;
+				height: 50px;
+				width: 130px;
+				font-size: 20px;
+				line-height: 50px;
+				text-align: center;
+			}	
+			.navlist a{
+				color: #e7e7e7;
+				display: write;
+			}
+			.navlist{
+				width: 800px;
+				margin: auto;
+			}
+			.navlist a:hover{
+				background-color: #3535bf;
+				color: #F64747;
+			}
+			
+			.main {
+			    text-align: center;
+			    padding: 20px;
+			}
+			
+			#avatar-section img {
+			    width: 150px; /* 根据需要调整 */
+			    height: 150px; /* 确保宽高比为1:1 */
+			    border-radius: 50%;
+			    border: 4px solid #fff;
+			    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			    transition: transform 0.5s ease;
+			}
+			
+			#avatar-section img:hover {
+			    transform: scale(1.05);
+			}
+			
+			.zl {
+			    width: 80%;
+			    max-width: 300px;
+			    margin: auto;
+			    margin-top: -20px;
+			    padding: 20px;
+			    background: #fff;
+			    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+			}
+			
+			.zl ul {
+			    list-style: none;
+				
+			}
+			
+			.zl ul li {
+			    background: #f4f4f4;
+			    margin-bottom: 1px;
+			    padding: 10px;
+			}
+			#messageForm { 
+				margin-bottom: 20px;
+			}
+			#messageText { 
+				width: 400px; 
+				height: 100px; 
+				margin-right: 5px; 
+			}
+			#messageFeedback { 
+				color: red; 
+				display: none; 
+			}
+			.message { 
+				margin-bottom: 10px; 
+				padding: 5px; 
+				border-left: 3px solid #333; 
+				background-color: #f4f4f4; 
+			}
+			#messageForm button{
+			  float: center;
+			  width: 80px;
+			  height: 33px;
+			  background-color: #7c7c7c;
+			  font-size: 16px;
+			  color: #fff;
+			}
+			
+			.footer{
+				text-align: center;
+				background-color: #6f6f6f;
+				margin-top: 20px;
+				color: #fff;
+				padding: 10px 0;
+			}
+			</style>
+		</head>	
+	<body>
+		<div class="hander" id="logo">宏村</div>
+		<div class="nav">
+			<ul class="navlist">
+				<li>
+					<a href="index.html">网站首页</a>
+				</li>
+				<li>
+					<a href="index6.html">特色景点</a>
+				</li>
+				<li>
+					<a href="index2.html">旅游攻略</a>
+				</li>
+				<li>
+					<a href="index3.html">历史文化</a>
+				</li>
+				<li>
+					<a href="index4.html">在线预订</a>
+				</li>
+				<li>
+					<a href="index5.html">登录/注册</a>
+				</li>
+			</ul>
+			  <div class="search">
+				  <form action="https://www.baidu.com/s" method="get">
+			        <input type="search" >
+			        <button type="button">搜索</button>
+					</form>
+			      </div>
+			<div class="dz">
+				<div id="clock"></div>
+				<ul>
+					<li><a href="index9.html">个人主页</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+		    <section id="avatar-section">
+		        <img src="img/6.jpg" alt="个人头像" id="avatar" class="avatar">
+		    </section>
+			<div class="zl">
+				<h3>个人资料</h3>
+				<ul>
+					<li>姓名: 李佳楠</a></li>
+					<li>学院: 电气与信息工程学院</a></li>
+					<li>班级: 22级计算机科学与技术4班</a></li>
+					<li>爱好: 热爱编程和设计</a></li>
+					<li>联系方式: OVO57350</a></li>
+					<li>邮箱: 2905484984@qq.com</a></li>
+				</ul>
+			</div>
+			<h2>留言板</h2>
+			<form id="messageForm">
+			    <textarea id="messageText" placeholder="写下你的留言..." required></textarea><br>
+			    <button type="submit">提交留言</button>
+			</form>
+			<div id="messageFeedback"></div>
+			<div id="messages"></div>
+		  </div>  
+	<div class="footer">&copy; 版权所有 李佳楠20220000608</div>
+		</body>
+	</html>
+	 <script>
+		 function getTime(){
+		 var now=new Date();    
+		 document.getElementById('clock').innerHTML=now.toLocaleString(); 
+		 }
+		 window.onload=setInterval(getTime,1000); 
+		 
+		 var input = document.querySelector('input[type="search"]');
+		 input.addEventListener('input', function() {
+		     var value = this.value;
+		     if (value.length > 0) {
+		         fetch('https://www.baidu.com/sugse/' + encodeURIComponent(value))
+		             .then(response => response.json())
+		             .then(data => {
+		                 console.log(data);
+		             })
+		             .catch(error => {
+		                 console.error('Error:', error);
+		             });
+		     }
+		 });
+		 
+	 	// 获取页面元素
+	 	var form = document.getElementById('messageForm');
+	 	var messageInput = document.getElementById('messageText');
+	 	var messagesContainer = document.getElementById('messages');
+	 	var feedback = document.getElementById('messageFeedback');
+	 	
+	 	// 表单提交事件
+	 	form.onsubmit = function(e) {
+	 	    e.preventDefault(); // 阻止表单默认提交行为
+	 	
+	 	    // 获取留言内容
+	 	    var message = messageInput.value.trim();
+	 	    if(message === '') {
+	 	        feedback.textContent = '留言不能为空！';
+	 	        feedback.style.display = 'block';
+	 	        return;
+	 	    }
+	 	
+	 	    // 创建新留言的元素
+	 	    var newMessageElem = document.createElement('div');
+	 	    newMessageElem.classList.add('message');
+	 	    newMessageElem.textContent = message;
+	 	
+	 	    // 显示留言
+	 	    messagesContainer.appendChild(newMessageElem);
+	 	
+	 	    // 清空输入和反馈
+	 	    messageInput.value = '';
+	 	    feedback.style.display = 'none';
+	 	};
+	 	</script>
+	

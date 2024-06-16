@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>宏村</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMxe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				color: #5c5c5c;
+			}
+			a{
+			    text-decoration: none;
+			    color: #404040;
+			}
+			a:hover{
+			    color: #F64747;
+			}
+			body{
+				width: 1200px;
+				margin: 0 auto;
+				
+			}
+			p{
+				margin-top: 15px;
+				text-indent: 2em;
+			}
+			li{
+				list-style: none;
+			}
+			img:hover{
+			    transform: scale(1.1);
+			    transition: all 1.5s linear;
+			    box-shadow: 5px 5px 0px 0px #bbb9b9;
+			}
+			.hander{
+				font-size: 60px;
+				letter-spacing: 100px;
+				position: relative;
+				left: 100px;
+				top: 20px;
+				postion:fixed;
+			}
+			#logo{
+				width: 500px;
+				font-weight: 600;
+				font-family: "华文行楷";
+				color: #8c888b;
+				background: -webkit-linear-gradient(45deg, #0c04f3, #f3df05, #f72004, #23f603, #3a6bb0);
+				color: transparent;
+				-webkit-background-clip: text;
+				animation: ran 10s linear infinite;
+				}
+					
+				@keyframes ran {
+				    from {
+				        backgroud-position: 0 0;
+				    }
+				    to {
+				        background-position: 2000px 0;
+				    }	
+				}
+				
+			.search{
+			  position: absolute;
+			  left: 646px;
+			  top: 20px;
+			  width: 538px;
+			  height: 36px;
+			}
+			.search input{
+			  float: left;
+			 width: 300px;
+			  height: 33px;
+			  padding-left: 10px;
+			}
+			.search button{
+			  float: left;
+			  width: 80px;
+			  height: 33px;
+			  background-color: #3d3b32;
+			  font-size: 16px;
+			  color: #fff;
+			}
+			.dz{
+				position: absolute;
+				left: 500px;
+				top:10px;
+				height: 20px;
+			}
+			.dz ul li{
+				width: 350px;
+				margin-left: 150px;
+				margin-top: -20px;
+				font-size: 15px;
+				color: #ac0000;
+			}
+			#clock{
+				width:200px;
+				margin-left: 280px;
+				height:20px;
+				margin-top: 45px;
+				font-size: 15px;
+				font-weight:bold;
+				text-align:center;
+				color:#333;				
+			}
+			
+			.nav{
+				height: 50px;
+				margin-top: 20px;
+				background: linear-gradient(#4b4eff,#292993);
+			}
+			.navlist li{
+				float: left;
+				height: 50px;
+				width: 130px;
+				font-size: 20px;
+				line-height: 50px;
+				text-align: center;
+			}	
+			.navlist a{
+				color: #e7e7e7;
+				display: write;
+			}
+			.navlist{
+				width: 800px;
+				margin: auto;
+			}
+			.navlist a:hover{
+				background-color: #3535bf;
+				color: #F64747;
+			}
+			
+			.main h2{
+				margin-top: 20px;
+			}
+			.main img{
+				display: block;
+				margin: 0 auto;
+				width: 800px;
+			}
+			.main ul{
+				font-size: 15px;
+				text-align: center;
+			}
+			
+			.footer{
+				text-align: center;
+				background-color: #6f6f6f;
+				color: #fff;
+				margin-top: 50px;
+				padding: 10px 0;
+			}
+			</style>
+		</head>	
+	<body>
+		<div class="hander" id="logo">宏村</div>
+		<div class="nav">
+			<ul class="navlist">
+				<li>
+					<a href="index.html">网站首页</a>
+				</li>
+				<li>
+					<a href="index6.html">特色景点</a>
+				</li>
+				<li>
+					<a href="index2.html">旅游攻略</a>
+				</li>
+				<li>
+					<a href="index3.html">历史文化</a>
+				</li>
+				<li>
+					<a href="index4.html">在线预订</a>
+				</li>
+				<li>
+					<a href="index5.html">登录/注册</a>
+				</li>
+			</ul>
+			  <div class="search">
+				  <form action="https://www.baidu.com/s" method="get">
+			        <input type="search" >
+			        <button type="button">搜索</button>
+					</form>
+			      </div>
+			<div class="dz">
+				<div id="clock"></div>
+				<ul>
+					<li><a href="index9.html">个人主页</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<h2 align=center> 寻梦江南，水墨徽州——皖南古村落游记&nbsp</h2>
+			<p>牛形古水系建筑群——宏村是一座经过严谨规划的古村落，特别是村内外人工水系的规划设计相当精致巧妙，专家评价宏村是“人文景观、自然景观相得益彰，是世界上少有的古代有详细规划之村落”。
+			被中外建筑专家称为“中国传统的一颗明珠”，“研究中国古代水利史的活教材”。</p>
+			<p>宏村被誉为“中国画里的乡村”，联合国专家称赞它为“举世无双的小城镇水街景观”。因为它背倚黄山余脉羊栈岭、雷岗山等，地势较高，有时云蒸霞蔚，
+			如浓墨重彩，有时似泼墨写意，四周山色与粉墙青瓦倒映湖中，人、古建筑与大自然融为一体，好似一幅徐徐展开的山水画卷。</p>
+			<p>宏村与黟县西递一样同是全国重点文物保护单位、全国首批历史文化名村、全国4A级旅游区，2000年11月30日，中国皖南古村落——西递、宏村作为“人类古老文明的见证，传统建筑的典型作品，
+			人和自然结合的光辉典范”被列入世界文化遗产名录。最近，在中央电视台“中国十大魅力名镇”评选中，西递宏村也榜上有名。</p>
+			</p>
+			<ul >
+			<img src="img/春天南湖.png" title="春天南湖" alt="春天南湖">
+			<p>南湖</p>
+			</ul>
+			<img src="img/12.png" title="南湖" alt="南湖">
+			<p>
+				南湖建于明万历丁未年（1607年）。宏村村落经永乐年间到万历年间，楼舍连栋，高低错落，人口繁衍，光靠月塘蓄水已不够用，又在万历年丁末年将村南百亩良田，凿深数丈，周围四旁砌石立岸，
+			仿西湖平湖秋月式样，建成南湖。湖成大弓形，湖堤分上下层，上层宽4米，原来古树参天，苍翠欲滴，躯干青藤盘绕，禽鸟鸣唱，还有垂柳，枝叶婀娜，像临镜梳妆的少女，把秀发洒向湖面水中。</p>
+			<p>
+				湖面绿荷摇曳，鸭群戏水，另有一番景致。整个湖面倒影浮光，水天一色，远峰近宅，跌落湖中，加之树荫水深和日光的相互作用，明暗协调，动静相宜，显得幽深、雅静、清新、明丽。
+				南湖历史上大修三次，1986年重建中堤，造"画桥"可东西划舟，情趣无穷。
+			</p>
+			<p>
+				清嘉庆甲戊年秋，浙江钱塘（今杭州）名士吴锡麟游南湖后，撰文述道："宏村南湖游迹之盛堪比浙江西湖"，因而南湖又有"黄山脚下小西湖"之称。
+			</p>
+			<img src="img/月沼.png" title="月沼" alt="月沼">
+			<p>月沼北畔正中“乐叙堂”祠堂，又名“众家厅”，为汪氏总祠，也是15世纪初明永乐年间所建。
+			 前进门楼基本保持原貌，梁架具有典型的明代风格，月梁、叉手、雀替、平盘斗等建筑构件雕刻精美，具有很高的艺术水准。
+			乐叙堂与月沼组成宏村八景之一“月沼风荷”。</p>
+			<img src="img/水圳.png" title="水圳" alt="水圳">
+			<p>水圳建于明永乐年间（公元1403—1423年），至今已有500多年历史，总长1200多米，绕过家家户户、长年清水不断。宏村人的祖先很会利用自然溪水来做文章，他们在宏村的上首浥溪河上拦河建石坝，
+			用石块砌成的数米宽的人工水渠，利用地势落差，把一泓碧水引入村中。水圳九曲十弯，穿堂过屋，经月沼，最后注入南湖，出南湖，灌农田，浇果木，重新流入濉溪，滋润得满村清凉，使静谧的山村有了动感，
+			创造一种“浣汲未防溪路远，家家门前有清泉”的良好环境。这人工水系，丰富了村落景观，和谐、多变、富有灵气，有6大功能。一是防火；二是调节小气候，改善气温和湿度，净化空气、美化环境；三是饮用；
+			四是洗涤；五是灌溉；六是发电。</p>
+			<p>水圳沿途建有无数个小渠踏石，人们浣衣洗涤、浇花灌园都极为方便，是古代村落的“自来水”，当年村民饮用、浣洗都在“牛肠”里，汪氏祖先曾立下规矩，每天早上8点之前，“牛肠”里的水为饮用之水，
+				过了8点之后，村民才能在这里洗涤。更为奇妙的是，这牛肠的水位，无论天晴下雨，总保持在一定的高度，即水位总是低于小桥以下一点，不多不少，十分奇特。
+			</p>
+			<img src="img/13.png" title="宏村" alt="宏村">
+			<p>1997年10月，世界建筑大师贝聿铭先生专程来宏村镇参观，他对这里的古建筑和古水系设施等评价极高，并在承志堂内挥笔题词：“黟县宏村古建筑物是国家的瑰宝”。</p>
+			<p>2000年，国际古遗址专家大河直躬在考察宏村镇后评价：“青山绿水本无价，白墙黑瓦别有情”。</p>
+			<p>2001年5月20日，原中共中央江总书记参观完宏村镇后，给予了极高的评价，将徽州历史文化建筑医学等归纳为五个英文字母：CBMDA。C=Culture，B=Business，M=Medicine，E=Education，A=Architecture（注：指文化、商业、医学、教育、建筑）。</p>
+		</div>
+		<div class="footer">&copy; 版权所有 李佳楠20220000608</div>
+	</body>
+</html>
+<script>
+		function getTime(){     //定义函数
+		var now=new Date();    //创建日期对象
+		document.getElementById('clock').innerHTML=now.toLocaleString(); //将日期和时间显示到盒子中
+		}
+		window.onload=setInterval(getTime,1000); //每隔1s执行一次getTime()函数
+		
+		var input = document.querySelector('input[type="search"]');
+		input.addEventListener('input', function() {
+		    var value = this.value;
+		    if (value.length > 0) {
+		        // 发送Ajax请求到百度搜索建议API
+		        fetch('https://www.baidu.com/sugse/' + encodeURIComponent(value))
+		            .then(response => response.json())
+		            .then(data => {
+		                // 更新搜索建议列表
+		                console.log(data);
+		            })
+		            .catch(error => {
+		                console.error('Error:', error);
+		            });
+		    }
+		});
+	</script>
